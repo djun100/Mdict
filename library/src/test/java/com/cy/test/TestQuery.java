@@ -58,7 +58,7 @@ public class TestQuery {
         }
         combining_search_tree.inOrder();//print results stored in the RBTree
 
-//        combining_search_tree.print();
+        combining_search_tree.print();
         System.out.println(combining_search_tree);
 /*printed results looks like 【happy____@398825@0@16905@1@16906@1】...【other results】...
 how to handle:

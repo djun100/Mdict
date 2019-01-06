@@ -1,6 +1,7 @@
 package com.knziha.rbtree;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -14,7 +15,10 @@ import java.util.concurrent.Executors;
  */
 public class RBTree_additive {
 
-    private RBTNode<additiveMyCpr1> mRoot;public RBTNode<additiveMyCpr1> getRoot(){return mRoot;}
+    private RBTNode<additiveMyCpr1> mRoot;
+    public RBTNode<additiveMyCpr1> getRoot(){
+        return mRoot;
+    }
     
     private static final boolean RED   = false;
     private static final boolean BLACK = true;
@@ -839,8 +843,35 @@ public class RBTree_additive {
         }
     }
 
-    public void print() {
-        if (mRoot != null)
-            print(mRoot, mRoot.key, 0);
+
+    private void print(List<String> results, RBTNode<additiveMyCpr1> tree, additiveMyCpr1 key, int direction) {
+        if (results==null){
+            results=new ArrayList<>();
+        }
+
+        if(tree != null) {
+
+            if (direction == 0) {
+                // tree是根节点
+                System.out.printf("【%s(B)】 is root\n", tree.key.toString());
+                results.add(tree.key.toString());
+            } else {
+                // tree是分支节点
+                System.out.printf("【%s(%s)】 is 【%s】's %6s child\n", tree.key.toString(), isRed(tree) ? "R" : "B", key.toString(), direction == 1 ? "right" : "left");
+                results.add(tree.key.toString());
+            }
+
+            print(results,tree.left, tree.key, -1);
+            print(results,tree.right,tree.key,  1);
+        }
+    }
+
+    public List<String> print() {
+        if (mRoot != null){
+            List<String> results=new ArrayList<String>();
+            print(results, mRoot, mRoot.key, 0);
+            return results;
+        }
+        return null;
     }
 }
