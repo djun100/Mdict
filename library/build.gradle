@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url "http://www.ebi.ac.uk/intact/maven/nexus/content/repositories/ebi-repo/" }
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation "org.apache.commons:commons-text:1.6"
+    // https://mvnrepository.com/artifact/commons-lang/commons-lang
+    implementation group: 'commons-lang', name: 'commons-lang', version: '2.6'
+
+
+// https://mvnrepository.com/artifact/org.mozilla.intl/chardet
+    implementation group: 'org.mozilla.intl', name: 'chardet', version: '1.0'
+// https://mvnrepository.com/artifact/org.anarres.lzo/lzo-core
+    implementation group: 'org.anarres.lzo', name: 'lzo-core', version: '1.0.6'
+    testImplementation 'com.github.djun100:UtilDeskTop:-SNAPSHOT'
+}

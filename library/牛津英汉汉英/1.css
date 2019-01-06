@@ -1,0 +1,1414 @@
+img
+{
+max-width:100%
+}
+
+
+
+
+body {font-family: Helvetica, Arial, sans-serif;	/*'STSong';*/}
+
+
+a {
+	color:#2971A7;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#2971A7;
+	text-decoration:underline;
+}
+
+tr {
+	font-size: 80%;
+	width:30%;
+}
+
+td {
+}
+
+span.br { display:block; }
+
+
+
+
+*.entry
+{
+	display: block;
+	margin: 0em 0em 0em 0em; 
+	margin-bottom: 3.0em;
+}
+
+
+span.hsb:before { content:'Ã¢â‚¬Â¢'; font-size:80%; font-family: "Baskerville";}
+
+
+
+span.hwg
+{
+	display: block;
+	margin-bottom: 0.2em;
+	/* margin-bottom: 0.5em; */
+	margin-top: 0.2em;
+}
+
+span.hw, span.ehw, span.vhw
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	word-wrap: break-word;
+	font-style: normal;
+}
+
+span.hw span.retroflex
+{
+	font-size:80%;
+}
+
+*.entry[id^="e_"] span.hw
+{
+	font-family: "Baskerville";
+}
+*.entry[id^="e_"] span.hwg span.hv
+{
+	font-size: 150%;
+}
+*.entry[id^="e_"] span.hwg > span.gp
+{
+	font-size: 150%;
+}
+
+*.entry[id^="e_"] span.hvg span.hsb
+{
+	margin-left:0em;
+	margin-right:0em;
+}
+
+*.entry[id^="z_"] span.hwg span.hw
+{
+	font-family: "STKaiti";
+	font-size: 200%;
+	margin-top: 2em;
+}
+*.entry[id^="z_"] span.hwg span.hvg,
+*.entry[id^="z_"] span.hwg span.hv
+{
+	font-size: 120%;
+	margin-left: 0em;
+}
+*.entry[id^="z_"] span.hvg span.hsb
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+
+*.entry[id^="z_"] span.hwg span.hm
+{
+	vertical-align: 80%;
+}
+
+*.entry[id^="e_"] span.hwg span.hm
+{
+	vertical-align: 40%;
+}
+
+span.hm
+{
+	vertical-align: super;
+}
+
+span.gp.ty_hom
+{
+	vertical-align: super;
+	font-size: 70%;
+}
+
+*.entry[id^="e_"] span.gramb > span.ps,
+*.entry[id^="e_"] span.gramb > span.frmg
+{
+	font-size: 110%;
+}
+
+*.entry[id^="e_"] span.pr
+{
+	font-family: 'Times New Roman';
+	color: #777;
+}
+
+*.entry[id^="e_"] span.gramb span.pr + span.ps:before
+{
+	content: " ";
+}
+
+*.entry[id^="z_"] span.pr
+{
+	font-family: 'STKaiti';
+	color: #666;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+*.entry[id^="z_"] span.hwg span.pr
+{
+	color: #777777;
+	font-size:160%;
+}
+
+*.entry[id^="z_"] span.xr a span.pr,
+*.entry[id^="z_"] span.xr a span.pr span.ph
+{
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	color: inherit;
+}
+*.entry[id^="z_"] span.xr span.pr
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+
+*.entry[id^="z_"] span.xr a span.pr span.ph:before
+{
+	content: " ";
+}
+
+
+span.hwg span.pr, 
+span.frmg span.pr
+{
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+	display: inline-block;
+}
+span.ph
+{
+
+}
+
+
+
+span.gramb
+{
+	display: block;
+	margin-bottom: 2px;
+}
+
+/* sn */
+span.gp.ty_label.tg_gramb, span.gp.ty_label.tg_semb
+{
+	font-weight: bold;
+		/* z */
+}
+
+span.gramb.hasSn
+{
+
+	text-indent: -1em;
+
+}
+span.pvsec span.gramb.hasSn > span.gp.ty_label 
+{
+	font-weight: 600;
+	font-size: 100%;	/* z */
+}
+span.gramb.hasSn > span.gp.ty_label 
+{
+	
+	font-size: 105%;	/* z */
+	color:  darkred;
+	/* display: none; */
+	}
+
+span.semb
+{
+	display: block;
+	margin-bottom: 0.2em;
+}
+span.semb.hasSn
+{
+	display: block;
+}
+
+
+span.gramb span.semb
+{
+	margin-top: 0.2em;
+
+}
+span.gramb span.semb.hasSn
+{
+	margin-left: 1em;
+	text-indent: -1em;
+}
+span.gramb.hasSn span.semb.hasSn
+{
+
+}
+span.gramb.hasSn span.semb
+{
+	margin-left: 1em;
+	text-indent: -1em;
+}
+
+
+span.exg
+{
+	display: block;
+	margin-left: 0;
+	margin-right: 4;
+	font-size: 98%;
+	margin-top: 1px;	/* z */
+}
+
+*.entry[id^="e_"] span.exg span.trans
+{
+	margin-top: 0.2em;	/* z */
+	font-family:'STFangsong';
+	font-size: 110%;
+}
+*.entry[id^="e_"] span.exg span.trg span.gl
+{
+	font-family:'STFangsong';
+}
+
+*.entry[id^="z_"] span.exg span.ex
+{
+	margin-top: 0.1em;	/* z */
+	font-family:'STFangsong';
+	font-size: 110%;
+	margin-bottom: 0.1em;	/* z */
+}
+
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg > span.con
+{
+	margin-left: 1em;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg > span.con + span.trans
+{
+	margin-left: 1.5em;
+}
+span.semb span.exg	/* z */
+{
+	/* margin-left: 0.0em; */
+}
+span.semb.hasSn span.exg	/* z */
+{
+	margin-left: 4px;
+}
+
+*.entry[id^="e_"] span.semb span.exg + span.gp.tg_semb,
+*.entry[id^="e_"] span.semb > span.trg > span.ind + span.trans ~ span.gp.tg_trg
+{
+	display: none;
+}
+
+span.xrg
+{
+	margin-left: 0.2em;
+/*
+	margin-left: 1em;
+*/
+}
+
+*.entry > span.xrg
+{
+	display: block;
+	margin-top: 0.7em;
+	font-size: 110%;	/* z */
+}
+
+span.semb span.trg + span.xrg
+{
+	display: block;
+	/*
+	margin-left: 1em;
+	*/
+}
+
+*.entry > span.xrg
+{
+	margin-left: 1em;
+
+}
+
+span.gramb span.semb.hasSn span.trg + span.xrg
+{
+	margin-left: 1em;
+	font-size: 90%;	/* z */
+}
+span.gramb span.semb.hasSn span.exg + span.xrg
+{
+	margin-left: 0em;
+}
+
+
+span.exg span.trg
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-left: 0.85em;
+	font-size: 95%;
+	/* color: #777373; */
+}
+.entry[id^="e_"] span.exg span.trg
+{
+	margin-left: 0.85em;
+}
+.entry[id^="z_"] span.exg span.trg
+{
+	margin-left: 0.2em;
+}
+
+span.ex
+{
+	/*
+	display: block;
+	*/
+	margin-bottom: 0;
+	font-style:normal;
+	padding-left: 8px;
+}
+.entry[id^="e_"] span.ex
+{
+	font-size: 110%;
+	/* display: block; */
+}
+.entry[id^="e_"] span.ex + span.reg
+{
+	/* display:run-in; */
+	margin-left: 1em;
+}
+.entry[id^="e_"] span.ex + span.lev,
+.entry[id^="e_"] span.ex + span.fld,
+.entry[id^="e_"] span.trans + span.lev
+{
+	margin-left: 1em;
+}
+.entry[id^="e_"] span.exg + span.trg > span.lev
+{
+	margin-left: 0.8em;	/*1.5em;*/
+}
+
+.entry[id^="e_"] span.exg + span.trg > span.ind
+{
+	margin-left: 0.15em;
+}
+
+/*
+span.exg span.ex
+{
+}
+*/
+
+*.entry[id^="z_"] span.trg span.trans	/* z */
+{
+	/*font-size: 120%;*/
+}
+
+*.entry[id^="z_"] span.trans	/* z */
+{
+	font-size: 110%;
+}
+
+*.entry[id^="z_"] span.trans + span.tg_trg	/* z */
+{
+	display: none;
+}
+
+span.exg span.ex:before
+{
+	content: "⇒ ";
+	font-family: Baskerville;
+	font-size: 75%;
+}
+
+/**.entry[id^="z_"] */span.exg span.con:before	/* z */
+{
+	/* content: "⇒ "; */
+	font-family: Baskerville;
+	font-size: 75%;
+}
+
+.entry[id^="z_"] span.semb span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg	/* z */
+{
+	display: block;
+	margin-left: 0.3em;
+}
+
+.entry[id^="e_"] span.semb span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg	/* z */
+{
+	display: block;
+	margin-left: 0.5em;
+}
+
+.entry[id^="e_"] span.semb.hasSn span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg	/* z */
+{
+/*	display: inline;
+	margin-left: 0.3em;*/
+}
+
+.entry[id^="e_"] span.semb.hasSn span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg span.ex:before	/* z */
+{
+	content: "";
+}
+
+.entry[id^="e_"] span.semb.hasSn span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg,	/* z */
+.entry[id^="e_"] span.semb.hasSn span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg span.ex	/* z */
+{
+	display: inline;
+}
+
+
+.entry[id^="z_"] span.semb span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg span.con	/* z */
+{
+	display: block;
+}
+
+.entry[id^="e_"] span.semb span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg span.con	/* z */
+{
+	display: block;
+	margin-left: 0.5em;
+}
+.entry[id^="e_"] span.semb span.gp.ty_label.tg_semb + span.gp.tg_semb + span.exg span.con + span.trg
+{
+	margin-left: 1.1em;
+}
+
+/* span.exg span.cs span.trans */
+span.exg span.lev + span.cs,
+span.exg span.cs + span.trans
+{
+	margin-left: 0.5em;
+}
+
+.entry[id^="z_"] span.exg span.trans
+{
+	margin-left: 0.9em;	/* z */
+}
+
+/* first exg in the sn */
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg span.ind
+{
+	display: inline;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg span.trans
+{
+	display: inline;
+}
+
+span.exg span.trans + span.trans.ty_pinyin,
+span.trg span.trans + span.trans.ty_pinyin,
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg span.trans + span.trans.ty_pinyin,
+span.semb.hasSn > span.gp.ty_label + span.gp + span.trg span.trans + span.trans.ty_pinyin
+{
+	display: none;
+	/*
+	display: block;
+	*/
+}
+span.exg span.trans + span.trans.ty_pinyin:before
+{
+	content: " ";
+}
+
+span.exg span.co 
+{
+	margin-left: 0.5em;
+}
+
+span.exg span.co + span.co
+{
+	margin-left: 0em;
+}
+
+span.exg span.lev
+{
+	/* display: run-in; */
+	margin-left: 0.1em;
+	border-radius: 5px;
+	color: darkred;
+	font-size: 90%;
+}
+span.exg span.trg span.lev
+{
+	/*display: run-in;*/
+}
+
+span.exg span.lev + span.trans:before
+{
+	content: "";
+}
+span.exg span.lev + span.trans
+{
+	margin-left: 0.2em;
+}
+
+span.ex span.italic
+{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:100%;
+}
+
+
+span.ex > span.bold
+{
+	font-weight: 600;
+	font-style: normal;
+} /*{ font-family:'Baskerville-SemiBoldItalic';}*/
+
+
+
+span.xr	
+{
+
+}
+
+span.xr	span.xrlabel
+{
+	margin-left: 0.3em;
+}
+
+span.csec
+{
+	display: block;
+	margin-left: 0.5em;
+}
+
+
+
+span.gp.ty_no-margin,
+span.sp + span.gp {
+	margin-right: 0em;
+}
+
+
+span.semb + span.trg span.ind,
+span.gramb > span.ind
+{
+	display: inline;
+	margin-top: 0em;
+	margin-left: 0em;
+	/*font-family: "HiraMinProN-W6";*/
+}
+
+span.trg span.ind
+{
+	/* display: run-in; */
+	margin-top: 0em;
+	margin-left: 0em;
+	/*font-family: "HiraMinProN-W3";*/
+}
+
+*.entry[id^="z_"] span.ind	/* z */
+{
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+*.entry[id^="e_"] span.ind	/* z */
+{
+	/* margin-left: 0.5em; */
+	margin-left: 0.2em;
+	margin-right: 0.5em;
+}
+
+*.entry[id^="e_"] span.exg span.ind	/* z */
+{
+	margin-left: 0.3em;
+	margin-right: 0.5em;
+}
+
+span.ind
+{
+	/*
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	*/
+	font-family: Helvetica, Arial, sans-serif;
+	/* color: #1064a7; */
+	font-style: italic;
+}
+span.exg span.ind
+{
+}
+
+
+span.gramb span.idmsec span.semb
+{
+	margin-left: 0.5em;
+	margin-top: 0em;
+}
+
+span.gramb span.idmsec
+{
+	display: block;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+}
+
+/*
+span.gramb span.semb ~ span.idmsec {
+	margin-left: 1em;
+}
+*/
+
+span.idm + span.trg
+{
+	margin-left: 0.5em;
+}
+
+span.trg
+{
+	margin-right: 0.2em;
+}
+span.trans.ty_pinyin
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	font-family: 'STKaiti';
+	color: #777777;
+}
+
+span.exg span.trans span.gl
+{
+	font-size: 90%;
+}
+
+span.gramb span.semb span.semb
+{
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+	margin-left: 0.5em;
+	/*if indent margin-left: 16px;*/
+}
+
+span.csec span.gramb span.semb
+{
+	display: inline;
+}
+
+span.ef
+{
+	margin-right: 0.5em;
+}
+
+span.semb span.sn
+{
+	/*font-family: "HiraMinProN-W6";*/
+	margin-right:0.3em;
+}
+span.gramb span.sn
+{
+	/*font-family: "HiraMinProN-W6";*/
+	margin-right:0.3em;
+}
+
+
+span.cn
+{
+	display: block;
+	background-color: #eeeeee;
+	padding:0.33em;
+	margin-right: 1em;
+}
+span.cn span.cnttl
+{
+	display: block;
+	margin-left: 0.2em;
+}
+
+*.entry[id^="e_"] span.cn span.cnttl
+{
+}
+*.entry[id^="z_"] span.cn span.cnttl
+{
+	font-size: 120%;
+	font-family: "STKaiti";
+	/*
+	font-family: "HiraginoSansGB-W6";
+	*/
+}
+
+/* span.encBlock	{ */
+span.note,
+span.cntxt
+{
+	display: block;
+	background-color: #eeeeee;
+	padding: 0.33em 0.49em 0.33em 0.49em;
+	margin-right: 1em;
+}
+
+span.semb span.semb + span.trg span.box
+{
+	margin-top: 0.2em;
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+
+
+span.box	{
+	display: block;
+	background-color: #eeeeee;
+	padding:0.5em 0.8em 0.5em 0.8em;
+	margin-left: 0em;
+	margin-right: 2em;
+	margin-bottom:2em;
+	font-size: 80%;
+	width: 90%;
+}
+
+span.fld {
+	/* font-size: 95%; */
+	font-size: 0.9em;
+	color: #1c6e3d;
+}
+
+span.con {	
+	margin-bottom: 0.1em;
+	font-style:normal;
+}
+span.exg span.con
+{
+
+	margin-right: 0.7em;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg span.con
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.exg span.ind + span.con
+{
+	display: block;
+	margin-left: 1em;
+}
+
+span.semb > span.trg
+{
+}
+span.semb > span.exg + span.trg
+{
+	display: block;
+	margin-left: 0.5em;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.trg > span.ind
+{
+	display: inline;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+}
+span.semb.hasSn > span.gp.ty_label + span.gp + span.trg > span.trans
+{
+	display: inline;
+	margin-left: 0.2em;
+}
+span.semb > span.trg > span.ind
+{
+	font-size: 84%;
+}
+span.semb > span.trg > span.ind + span.trans
+{
+	display: block;
+	margin-left: 0.8em;
+}
+
+
+
+/* span.provLabel, span.regLabel, span.subjLabel */
+span.reg, span.ge, span.sj
+{
+	font-family: 'HelveticaNeue-Light';
+	font-size: 80%;
+	/* font-size: 90%; */
+	/* color: darkred; */
+	font-style: italic;
+}
+
+
+/*==================*/
+
+*.entry[id^="z_"] span.ps, 
+span.cnt,
+*.entry[id^="z_"] span.lev
+{
+	border: solid 1px #a0a0a0;
+	margin-left: 8px;
+	margin-right: 0.18em;
+	margin-top: 1em;
+	/* margin-bottom: 0.18em; */
+	/*
+	padding: 1px 1px 0px 1px;
+	*/
+	color: #000000;
+	-webkit-border-radius: 2px;
+	/* vertical-align: 20%; */	/* z */
+	font-size: 80%;
+}
+*.entry[id^="e_"] span.ps
+{
+	/*font-family: Baskerville;*/
+	font-family: Baskerville-Italic;
+}
+*.entry[id^="e_"] span.cnt
+{
+	font-family: 'HelveticaNeue-Light';
+	font-size: 70%;
+	vertical-align: 10%;
+}
+*.entry[id^="e_"] span.lev,
+*.entry[id^="e_"] span.fld
+{
+	font-family: 'HelveticaNeue-Light';
+	font-size: 80%;
+}
+
+*.entry[id^="e_"] span.ps, 
+*.entry[id^="e_"] span.lev
+{
+	margin-left: 0.1em;
+	margin-right: 0.2em;
+/*	padding-left: 0.1em;
+	padding-right: 0.1em;*/
+}
+
+*.entry[id^="e_"] span.fld
+{
+	margin-left: 0.1em;
+	margin-right: 0.5em;
+}
+*.entry[id^="e_"] span.cnt
+{
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+*.entry[id^="z_"] span.ps, 
+*.entry[id^="z_"] span.cnt, 
+*.entry[id^="z_"] span.lev,
+*.entry[id^="z_"] span.fld
+{
+	font-family: 'HelveticaNeue-Light', 'HiraginoSansGB-W3';
+	/* font-size: 70%; */
+	margin-left: 0.1em;
+	margin-right: 0.3em;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	padding-bottom: 0.1em;	/* z */
+}
+*.entry[id^="z_"] span.gramb > span.ps
+{
+	margin-left: 0em;
+}
+*.entry[id^="z_"] span.semb > span.lev:first-child
+{
+	margin-left: 0em;
+}
+*.entry[id^="z_"] span.ps,
+*.entry[id^="z_"] span.lev
+{
+	font-size: 70%;
+}
+
+
+span.gp.tg_gramb + span.ps
+{font-size: 90%;font-weight: bold;color: rgba(196, 21, 27, .8);font-style: italic;padding-right: 2px;}
+span.ps + span.lev
+{
+	margin-left: 0.5em;
+}
+
+span.ps + span.frmg
+{
+	margin-left: 0.5em;
+}
+span.frmg span.gr 
+{
+	font-family: Helvetica, Arial, sans-serif;
+}
+span.frmg span.frm
+{
+	/* font-family: 'Baskerville'; */
+	font-weight: 600;
+}
+span.frmg span.gr + span.frm
+{
+	margin-left: 0.1em;
+}
+
+.entry[id^="e_"] span.gr + span.lev
+{
+	margin-left: 0.5em;
+}
+
+.entry[id^="e_"] span.ex + span.gr
+{
+	margin-left: 0.2em;
+	margin-right: 0.3em;
+}
+
+
+
+span.hwg span.xrg {
+	display: block;
+	font-size: 100%;
+	margin-left: 1em;
+	margin-bottom: 0.1em;
+	font-size:90%;
+/*	line-height: 0.5;*/
+}
+
+span.hwg span.etym {
+	margin-top: 0em;
+	margin-left: 0.5em;
+	font-size:90%;
+}
+
+span.hwg > span.u {
+	display: block;
+	margin-left:1em;
+	margin-bottom: 0.2em;
+	font-size:90%;
+}
+
+
+span.hwg span.grnote span.xrg
+{
+	display: inline;
+	font-size: 100%;
+	margin-left: 0.2em;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	line-height: 1em;
+}
+
+
+/*==================*/
+
+
+span.pvb
+{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.7em;
+	padding: 0.2em;
+
+}
+span.pvb span.gp.ty_label.tg_pvb
+{
+	font-variant: small-caps;
+	font-size: 1.1em;
+	color: #006699;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+span.pvb span.pvsec
+{
+	display: block;
+	margin-top: 0.5em;
+}
+
+span.pvb span.pvsec span.pvg
+{
+	display: block;
+	padding-top: 2px;
+}
+span.pvb span.pvsec span.pvg span.pv
+{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+span.pvb span.pvsec span.gramb
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+span.pvb span.pvsec span.gramb span.semb
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+}
+
+
+/*
+	===============================================
+*/
+
+span.grnote > span.lbl {
+	Background: #b0b0b0;
+	border: solid #b0b0b0;
+	border-width: 0px;
+	padding: 0px 5px 0px 5px;
+	font-size:100%;
+	color: white;
+	font-family: "Baskerville-BoldItalic";
+	vertical-align: 6%;
+	-webkit-border-radius: 2px;
+	margin-left:0.2em;
+	margin-right:0.3em;
+}
+
+
+
+span.italic
+{
+	font-family:'Baskerville-Italic';
+	/*font-size:130%;*/
+}
+span.bold span.italic,
+span.italic span.bold
+{
+	font-family:'Baskerville-SemiBoldItalic';
+	/*font-size:110%;*/
+}
+span.underline	{ text-decoration: underline}
+
+
+span.sup		 { vertical-align: super; font-size: 70%}
+span.sub		 { vertical-align: sub; font-size: 70%}
+span.nu			 { vertical-align: super; font-size: 70%}
+span.dn			 { vertical-align: sub; font-size: 70%}
+
+
+
+/*============================*/
+/*==== print media styles ====*/
+/*============================*/
+
+@media print {
+body, div[class="dic-divider"] {
+	margin-top: 0em;
+}
+div[class="dic-divider"] img, div[class="dic-divider"] hr {
+	display:none;
+}
+d:entry {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+div[class="dic-divider"] {
+	page-break-after: avoid;
+}
+d:entry {
+	orphans: 3;
+	widows: 5;
+}
+}
+
+
+
+img.gi
+{
+	width: 0.9em;
+	height: 0.9em;
+}
+
+
+
+html.apple_client-panel {
+	background-color: transparent;
+}
+html.apple_client-panel body
+{
+	/*font-family:'HiraMinProN-W3';*/
+	font-size: 14px;
+	
+	margin-top: 0px;
+	margin-left: 1em;
+	margin-bottom: 0px;
+	margin-right: 1em;
+	
+	color: #111111;
+	text-shadow: 0px 1px 0px #EEEEEE;
+	line-height: 18px;
+}
+
+html.apple_client-panel body *.entry[id^="z_"],
+html.apple_client-panel body *.entry[id^="e_"]
+{
+	margin-left: 0em;
+}
+
+html.apple_client-panel a,
+html.apple_client-panel a:link,
+html.apple_client-panel a:visited,
+html.apple_client-panel a:hover,
+html.apple_client-panel a:active
+{
+	color: #000000;
+	text-decoration: none;
+}
+html.apple_client-panel div.lineart {
+	display: none;
+}
+html.apple_client-panel img {
+	display: none;
+}
+/* For image of PUA characters */
+html.apple_client-panel img.gi {
+	display: inherit;
+}
+
+/*
+	============================
+	Lookup -- Oxford specific
+*/
+
+html.apple_client-panel span.pr
+{
+	/*font-size: 86%;*/
+	font-size: 120%;
+	color: #808080;
+}
+
+
+html.apple_client-panel span.semb.ty_no_trans_but_ex span.exg
+{
+	display: block;
+	font-size: 100%;
+}
+
+html.apple_client-panel span.hwg + span.drvb
+{
+	display:block;
+}
+
+
+html.apple_client-panel span.hwg,
+html.apple_client-panel *.entry[id^="z_"] span.hwg,
+html.apple_client-panel *.entry[id^="e_"] span.hwg
+{
+	font-size: 100%;
+	color: #777777;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	margin-left: 0em;
+}
+html.apple_client-panel *.entry[id^="e_"] span.hwg span.hw
+{
+	font-size: 110%;
+}
+html.apple_client-panel span.hw,
+html.apple_client-panel *.entry[id^="z_"] span.hwg span.hw
+{
+	font-size: 135%;
+}
+html.apple_client-panel *.entry[id^="e_"] span.hwg span.hv
+{
+	font-size: 110%;
+}
+
+
+
+html.apple_client-panel span.ph,
+html.apple_client-panel *.entry[id^="z_"] span.ph,
+html.apple_client-panel *.entry[id^="e_"] span.ph
+{
+	font-size: 80%;
+	color: #777777;
+}
+
+html.apple_client-panel *.entry[id^="z_"] span.hwg span.ph
+{
+	margin-left: 0em;
+}
+
+html.apple_client-panel *.entry[id^="z_"] span.hwg span.pr
+{
+	margin-left: 0.25em;
+}
+
+html.apple_client-panel span.pos /* part of speech */
+{
+	font-size: 100%;
+	color: #777777;
+}
+
+/*
+html.apple_client-panel span.bold	{font-family:'HiraMinProN-W3'; font-size:100%; }
+*/
+html.apple_client-panel span.italic	{ font-family:'Baskerville-Italic'; font-size:130%; }
+html.apple_client-panel span.bold span.italic,
+html.apple_client-panel span.italic span.bold {
+	font-family:'Baskerville-Italic';
+	/*font-size:110%;*/
+}
+
+
+
+html.apple_client-panel span.gramb,
+html.apple_client-panel *.entry[id^="z_"] span.gramb,
+html.apple_client-panel *.entry[id^="e_"] span.gramb,
+html.apple_client-panel span.semb,
+html.apple_client-panel *.entry[id^="z_"] span.semb,
+html.apple_client-panel *.entry[id^="e_"] span.semb
+{
+	/*
+	margin-left: 0em !important;
+	*/
+	margin-left: 0em !important;
+	margin-top: 0em !important;
+	margin-bottom: 0.1em !important;
+	font-size:95%;
+}
+
+html.apple_client-panel span.gramb.hasSn span.semb,
+html.apple_client-panel span.semb.hasSn,
+html.apple_client-panel span.gramb.hasSn
+{
+	text-indent: 0em !important;
+}
+
+html.apple_client-panel span.semb span.semb
+{
+	margin-left: 0.5em !important;
+}
+
+html.apple_client-panel *.entry[id^="z_"] span.lev,
+html.apple_client-panel *.entry[id^="z_"] span.ps
+{
+	display: inline !important;
+	margin-left: 0em !important;
+	padding-left: 0.2em !important;
+	font-size: 75% !important;
+	vertical-align: 10% !important;
+}
+
+html.apple_client-panel *.entry[id^="e_"] span.ps
+{
+	display: inline !important;
+	margin-left: 0em !important;
+	padding-left: 0.2em !important;
+	font-size: 100% !important;
+	vertical-align: 10% !important;
+}
+
+html.apple_client-panel span.gramb.hasSn > span.gp.ty_label
+{
+	font-size: 100%;
+}
+
+html.apple_client-panel *.entry[id^="z_"] span.hwg span.box.ty_jump_table
+{
+	display:none !important;
+}
+
+html.apple_client-panel *.entry[id^="e_"] span.hwg span.hvg
+{
+	font-size:100%;
+}
+html.apple_client-panel *.entry[id^="e_"] span.hwg span.hvg::before
+{
+	margin-right:0em;
+}
+
+html.apple_client-panel *.entry[id^="z_"] span.hw { font-family: "STKaiti";}
+html.apple_client-panel *.entry[id^="z_"] span.hwg span.hvg
+{
+	/*
+	font-size:100%;
+	*/
+	margin-left:0em;
+}
+
+
+/*
+	============================
+*/
+
+
+
+span.exg span.lev:before {/****/
+    content: "[ ";
+}
+
+
+
+
+span.exg span.lev:after {/****/
+    content: "]";
+}
+
+
+
+span.exg span.ex:before{
+    padding-right: 0.3em;
+	content: "•";
+      color: gray;
+    font-style: normal !important;
+    font-size: 0.95em;
+}
+
+span.ps {
+    font-size: 90%;
+    font-weight: bold;
+    color: rgba(196, 21, 27, .8);
+    font-style: italic;
+}
+
+span.lev {
+    font-size: 0.9em;
+    color: #1c6e3d;
+}
+
+span.lev:before {/****/
+    content: "[ ";
+}
+
+span.lev:after {/****/
+    content: "]"; 
+}
+
+
+span.fld:before {
+    content: "( ";
+}
+
+span.fld:after {/****/
+    content: ")";    
+}
+
+span.pvb span.pvsec span.pvg::before{
+    content: "";
+    display: block;
+    border-bottom: 1px dashed gray;
+    margin-bottom: 0.4em;
+}
+
+span.exg span.con:before {
+    padding-right: 0.3em;
+	content: "•";
+      color: gray;
+    font-style: normal !important;
+    font-size: 0.95em;
+}
+
+
+
+span.gp.ty_label.tg_gramb {
+    /* margin-left: 20px; */
+    padding-left: 16px;
+}
+
+span.pgr {
+    padding-left: 2px;
+}
+
+span.pv {
+    font-size: 1.2em;
+    font-weight: bold;
+    word-wrap: break-word;
+    font-style: normal;
+}
+
