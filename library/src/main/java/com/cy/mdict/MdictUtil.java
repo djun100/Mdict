@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class UtilDict {
+public class MdictUtil {
 
     public static List<String> queryFuzzyWord(String word,List<Mdict> mdicts) {
         RBTree_additive combining_search_tree = new RBTree_additive();
