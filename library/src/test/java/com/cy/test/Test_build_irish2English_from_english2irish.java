@@ -1,8 +1,8 @@
 package com.cy.test;
 
-import com.cy.UtilMy;
-import com.knziha.plod.dictionary.mdict;
-import com.knziha.plod.dictionaryBuilder.mdictBuilder;
+import com.cy.mdict.UtilMy;
+import com.mdict.knziha.plod.dictionary.mdict;
+import com.mdict.knziha.plod.dictionaryBuilder.mdictBuilder;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -18,8 +18,8 @@ public class Test_build_irish2English_from_english2irish {
     static String source = "F:\\video_wrkst\\javaStation\\github\\mdict-parser-java\\assets\\En-Irish(by Pat Griffin 2007).mdx";
     public static void main(String[] args) throws IOException{
     	mdict md = new mdict(source);
-    	//com.cy.UtilMy.show(md.getEntryAt(1347));
-    	//com.cy.UtilMy.show(md.getRecordAt(1347));
+    	//com.cy.mdict.UtilMy.show(md.getEntryAt(1347));
+    	//com.cy.mdict.UtilMy.show(md.getRecordAt(1347));
     	//md.printDictInfo();
     	
     	if(true) {
@@ -34,12 +34,12 @@ public class Test_build_irish2English_from_english2irish {
 	    		String res2 = res.substring(res.indexOf("`2`")+3, res.length());
 	    		String[] gross = res2.split(",");
 	    		String retroContent = md.getEntryAt(i);
-	    		//com.cy.UtilMy.show(retroContent);
+	    		//com.cy.mdict.UtilMy.show(retroContent);
 				/*
     			if(res2.contains("`2`")) {
     				fOut.write(res);
-    				//com.cy.UtilMy.show("|"+i+"|"+res);
-    				//com.cy.UtilMy.show(entrI.trim());
+    				//com.cy.mdict.UtilMy.show("|"+i+"|"+res);
+    				//com.cy.mdict.UtilMy.show(entrI.trim());
     			}
 				 */	
 
@@ -47,8 +47,8 @@ public class Test_build_irish2English_from_english2irish {
     				fOut.write(retroContent);
     				fOut.write("\n");
     				fOut.flush();
-    				//com.cy.UtilMy.show("|"+i+"|"+res);
-    				//com.cy.UtilMy.show(entrI.trim());
+    				//com.cy.mdict.UtilMy.show("|"+i+"|"+res);
+    				//com.cy.mdict.UtilMy.show(entrI.trim());
     			}
 	    		for(String entrI:gross) {
 	    			String entry = entrI.trim();
@@ -63,12 +63,12 @@ public class Test_build_irish2English_from_english2irish {
     	mdict md2 = new mdict("C:\\Irish-En.mdx");
     	md2.printDictInfo();
     	
-    	//com.cy.UtilMy.show(md2.getEntryAt(1328));
+    	//com.cy.mdict.UtilMy.show(md2.getEntryAt(1328));
     	UtilMy.show(md2.getRecordAt(13280));
     	//md.printAllKeys();//md2.lookUp("úth")
     	//TODO entry过长时会出错 record
-    	//com.cy.UtilMy.show(md2.getRecordAt(md2.lookUp("rite")));
-    	//com.cy.UtilMy.show(md2.getEntryAt(32000));//TODO add border check
+    	//com.cy.mdict.UtilMy.show(md2.getRecordAt(md2.lookUp("rite")));
+    	//com.cy.mdict.UtilMy.show(md2.getEntryAt(32000));//TODO add border check
     	
     }
 }

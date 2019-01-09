@@ -1,8 +1,8 @@
 package com.cy.test;
 
-import com.cy.UtilMy;
-import com.knziha.plod.dictionary.mdict;
-import com.knziha.plod.dictionaryBuilder.mdictBuilder;
+import com.cy.mdict.UtilMy;
+import com.mdict.knziha.plod.dictionary.mdict;
+import com.mdict.knziha.plod.dictionaryBuilder.mdictBuilder;
 
 import java.io.IOException;
 
@@ -39,11 +39,11 @@ public class TestBuildMdx {
     	//md.printAllContents();
     	UtilMy.show(md.getRecordAt(md.lookUp("happy")));
     	UtilMy.show(md.getRecordAt(1024));
-    	//com.cy.UtilMy.show(md.getRecordAt(md.lookUp("zz7n5uibth")));
-    	//com.cy.UtilMy.show(md.getEntryAt(100));
-    	//com.cy.UtilMy.show(md.lookUp("happy")+"");
-    	//com.cy.UtilMy.show(mdxBD.data_tree.xxing(new myCpr("happy","")).getKey().key);
-    	//com.cy.UtilMy.show(md.getEntryAt(534));
+    	//com.cy.mdict.UtilMy.show(md.getRecordAt(md.lookUp("zz7n5uibth")));
+    	//com.cy.mdict.UtilMy.show(md.getEntryAt(100));
+    	//com.cy.mdict.UtilMy.show(md.lookUp("happy")+"");
+    	//com.cy.mdict.UtilMy.show(mdxBD.data_tree.xxing(new myCpr("happy","")).getKey().key);
+    	//com.cy.mdict.UtilMy.show(md.getEntryAt(534));
     	//md.printAllContents();
     	//md.prepareItemByKeyInfo(7);
     }

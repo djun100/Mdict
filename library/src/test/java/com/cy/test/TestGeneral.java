@@ -1,8 +1,8 @@
 package com.cy.test;
 
-import com.cy.UtilMy;
-import com.knziha.plod.dictionary.BU;
-import com.knziha.plod.dictionary.mdict;
+import com.cy.mdict.UtilMy;
+import com.mdict.knziha.plod.dictionary.BU;
+import com.mdict.knziha.plod.dictionary.mdict;
 
 import java.io.ByteArrayOutputStream;
 import java.io.UnsupportedEncodingException;
@@ -108,7 +108,7 @@ public class TestGeneral {
 	UtilMy.show("bbb"+binary_find_closest(new int[] {1,2,3,4,5,6,7,8,9,10,11,12,14,14},14,-1));
 	
 		String Fuzzykey = "haWa";
-		//com.cy.UtilMy.show("Fuzzykey"+EntryStartWith(testDataArr, 0, testDataArr.length, matcher));
+		//com.cy.mdict.UtilMy.show("Fuzzykey"+EntryStartWith(testDataArr, 0, testDataArr.length, matcher));
 		
 		
 		BU.printBytes("guppy".getBytes("utf8"));
@@ -159,7 +159,7 @@ public class TestGeneral {
     	int counter=0;
     	long cprRes1,cprRes0;
     	while(low<high){
-    		//com.cy.UtilMy.show(low+"~"+high);
+    		//com.cy.mdict.UtilMy.show(low+"~"+high);
     		counter+=1;
     		System.out.println(low+":"+high);
     		middle = (low+high)/2;

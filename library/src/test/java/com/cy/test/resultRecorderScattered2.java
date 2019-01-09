@@ -1,7 +1,7 @@
 package com.cy.test;
 
-import com.cy.UtilMy;
-import com.knziha.plod.dictionary.mdict;
+import com.cy.mdict.UtilMy;
+import com.mdict.knziha.plod.dictionary.mdict;
 
 import java.io.IOException;
 import java.util.List;
@@ -162,7 +162,7 @@ public class resultRecorderScattered2 extends BaseDictActivityResultRecoder {
     	int counter=0;
     	long cprRes1,cprRes0;
     	while(low<high){
-    		//com.cy.UtilMy.show(low+"~"+high);
+    		//com.cy.mdict.UtilMy.show(low+"~"+high);
     		counter+=1;
     		System.out.println(low+":"+high);
     		middle = (low+high)/2;

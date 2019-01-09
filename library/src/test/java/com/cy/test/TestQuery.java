@@ -1,8 +1,8 @@
 package com.cy.test;
 
 import com.cy.util.UFile;
-import com.knziha.plod.dictionary.mdict;
-import com.knziha.rbtree.RBTree_additive;
+import com.mdict.knziha.plod.dictionary.mdict;
+import com.mdict.knziha.rbtree.RBTree_additive;
 
 import org.junit.Test;
 
@@ -41,7 +41,7 @@ public class TestQuery {
 
 //        mdictRes m1 = new mdictRes(sRes2);
         //m.printAllKeys();
-//        com.cy.UtilMy.show(m1.getEntryAt(m1.lookUp(key)));
+//        com.cy.mdict.UtilMy.show(m1.getEntryAt(m1.lookUp(key)));
 
     }
 

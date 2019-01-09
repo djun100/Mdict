@@ -33,13 +33,11 @@ repositories {
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
     implementation "org.apache.commons:commons-text:1.6"
-    // https://mvnrepository.com/artifact/commons-lang/commons-lang
     implementation group: 'commons-lang', name: 'commons-lang', version: '2.6'
+    //for startdict.org.yage.dict.star
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.1'
 
-
-// https://mvnrepository.com/artifact/org.mozilla.intl/chardet
     implementation group: 'org.mozilla.intl', name: 'chardet', version: '1.0'
-// https://mvnrepository.com/artifact/org.anarres.lzo/lzo-core
     implementation group: 'org.anarres.lzo', name: 'lzo-core', version: '1.0.6'
     implementation 'com.github.djun100:UtilAndroid:-SNAPSHOT'
 

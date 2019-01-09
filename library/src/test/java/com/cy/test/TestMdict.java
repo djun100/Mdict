@@ -1,10 +1,10 @@
 package com.cy.test;
 
-import com.cy.UtilMy;
-import com.knziha.plod.dictionary.BU;
-import com.knziha.plod.dictionary.mdict;
-import com.knziha.plod.dictionary.mdictRes;
-import com.knziha.rbtree.RBTree_additive;
+import com.cy.mdict.UtilMy;
+import com.mdict.knziha.plod.dictionary.BU;
+import com.mdict.knziha.plod.dictionary.mdict;
+import com.mdict.knziha.plod.dictionary.mdictRes;
+import com.mdict.knziha.rbtree.RBTree_additive;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ public class TestMdict {
     	
     //A keyword to search!			//简明英汉汉英词典.mdx      古生物图鉴.mdx
     	String key = "茉";//abduco@拉丁语英语		马连鞍@有毒植物		happy@English-Chinese 
-    	//com.cy.UtilMy.show(md.getRecordAt(md.lookUp("龤")));
+    	//com.cy.mdict.UtilMy.show(md.getRecordAt(md.lookUp("龤")));
     	//md.printDictInfo();
     	
     //A bunch of tests~
@@ -40,13 +40,13 @@ public class TestMdict {
     		UtilMy.show("\n\n——————————————————————basic query——————————————————————");
     		md =  new mdict("E:\\assets\\mdicts\\拉鲁斯法语词典.mdx");
     		key = "abces";
-	        //com.cy.UtilMy.show("查询 "+key+" ： "+md.getEntryAt(md.lookUp(key)));
+	        //com.cy.mdict.UtilMy.show("查询 "+key+" ： "+md.getEntryAt(md.lookUp(key)));
     		stst=System.currentTimeMillis();
 	        UtilMy.show("结果html contents of "+key+" ： "+md.getRecordAt(md.lookUp(key)));
 	        UtilMy.show("时耗 time used： "+(System.currentTimeMillis()-stst)+"ms");
 	        
 	        
-	        //com.cy.UtilMy.show(""+md.lookUp("茉莉"));
+	        //com.cy.mdict.UtilMy.show(""+md.lookUp("茉莉"));
     	}
           
         
@@ -215,25 +215,25 @@ public class TestMdict {
         
         //if(false)
         //{	/* false  true  */
-	    //	com.cy.UtilMy.show("\r\n糊匹配测试START...");
+	    //	com.cy.mdict.UtilMy.show("\r\n糊匹配测试START...");
 	    //	key = "stizo";
 	    //	stst=System.currentTimeMillis();
 	    //    md.findAllKeys(key);
-	    //    com.cy.UtilMy.show("模糊匹配 Contain:"+key+" time used： "+(System.currentTimeMillis()-stst)+"ms");
+	    //    com.cy.mdict.UtilMy.show("模糊匹配 Contain:"+key+" time used： "+(System.currentTimeMillis()-stst)+"ms");
         //} 
         ////![3.1]very simple match middle pattern
         //if(false)
         //{	/* false  true  */
-	    //	com.cy.UtilMy.show("\r\n糊匹配测试START...");
+	    //	com.cy.mdict.UtilMy.show("\r\n糊匹配测试START...");
 	    //	key = "stizo";
 	    //	stst=System.currentTimeMillis();
 	    //    md.findAllKeys(key);
-	    //    com.cy.UtilMy.show("模糊匹配 Contain:"+key+" time used： "+(System.currentTimeMillis()-stst)+"ms");
+	    //    com.cy.mdict.UtilMy.show("模糊匹配 Contain:"+key+" time used： "+(System.currentTimeMillis()-stst)+"ms");
         //} 
         
         //mdictRes m = new mdictRes("E:\\mdict\\MDictPC\\doc\\wordsmyth2018.mdd");
         //m.printAllKeys();
-    	//com.cy.UtilMy.show(":::>"+m.getEntryAt(m.lookUp("\\pic\\wolfSnow.jpg")));
+    	//com.cy.mdict.UtilMy.show(":::>"+m.getEntryAt(m.lookUp("\\pic\\wolfSnow.jpg")));
     	//BU.printBytes3(m.getRecordAt(m.lookUp("\\一.tif")),"一.tif");
         
         if(false) {
@@ -248,14 +248,14 @@ public class TestMdict {
         
         
         //mdict m = new mdict("E:\\assets\\mdicts\\简明英汉汉英词典.mdx");
-        //com.cy.UtilMy.show(m.lookUp("a and")+"");
+        //com.cy.mdict.UtilMy.show(m.lookUp("a and")+"");
         
         //mdict m = new mdict("E:\\assets\\mdicts\\TCM_Textbook.mdx");
         //m.printAllKeys();
-        //com.cy.UtilMy.show(m.getEntryAt(m.lookUp("\\VMpix\\ShengWuPix\\shengwuhuaxueyufenzishengwuxue279.jpg"))+"");
-        //com.cy.UtilMy.show(m.getRecordAt(0)+"");
-        //com.cy.UtilMy.show((m.getEntryAt(m.lookUp("\hex111111.jpg")))+"");
-        //com.cy.UtilMy.show((m.getEntryAt(m.lookUp("目的")))+"");
+        //com.cy.mdict.UtilMy.show(m.getEntryAt(m.lookUp("\\VMpix\\ShengWuPix\\shengwuhuaxueyufenzishengwuxue279.jpg"))+"");
+        //com.cy.mdict.UtilMy.show(m.getRecordAt(0)+"");
+        //com.cy.mdict.UtilMy.show((m.getEntryAt(m.lookUp("\hex111111.jpg")))+"");
+        //com.cy.mdict.UtilMy.show((m.getEntryAt(m.lookUp("目的")))+"");
         
         if(false) {
 	        mdict m = new mdict("E:\\assets\\mdicts\\诗经集注（注解两种）\\诗经集注（注解两种）.mdx");
