@@ -2,11 +2,67 @@ package com.stardict.StarDictUtils.cn.star.dict.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.zip.GZIPInputStream;
+import java.util.zip.GZIPOutputStream;
 
 public class DictUtils {
+	public static void unGzipFile(File srcFile,File desFile){
+		FileInputStream is;
+		FileOutputStream os;
+		InputStream gzis;
+		final int MAX_BYTE = 1024*1000;
+		int len = 0;
+		byte [] b = new byte[MAX_BYTE];
+		try {
+			is = new FileInputStream(srcFile);
+			os = new FileOutputStream(desFile);
+			try {
+				gzis = new GZIPInputStream(is);
+				while((len = gzis.read(b))!=-1)
+					os.write(b,0,len);
+				os.flush();
+				gzis.close();
+				os.close();
+				is.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+//		srcFile.delete();
+	}
+
+	public static void gzipFile(File srcFile,File desFile) {
+
+		FileInputStream fis;
+		FileOutputStream fos;
+		GZIPOutputStream gzos;
+
+		final int MAX_BYTE = 1024 * 1000;
+		int len = 0;
+		byte[] b = new byte[MAX_BYTE];
+
+		try {
+			fis = new FileInputStream(srcFile);
+			fos = new FileOutputStream(desFile);
+			gzos = new GZIPOutputStream(fos);
+			while ((len = fis.read(b)) != -1)
+				gzos.write(b, 0, len);
+			gzos.flush();
+			gzos.close();
+			fos.close();
+			fis.close();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+	}
+
 	/** 解压数据，将gzip（.gz , .dz）压缩的文件解压到输出流中 */
 	public static void unZip(File dz, OutputStream out) {
 		GZIPInputStream gin = null;
