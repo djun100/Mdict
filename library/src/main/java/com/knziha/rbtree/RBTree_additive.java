@@ -854,11 +854,11 @@ public class RBTree_additive {
             if (direction == 0) {
                 // tree是根节点
                 System.out.printf("【%s(B)】 is root\n", tree.key.toString());
-                results.add(tree.key.toString());
+                results.add(tree.key.key);
             } else {
                 // tree是分支节点
                 System.out.printf("【%s(%s)】 is 【%s】's %6s child\n", tree.key.toString(), isRed(tree) ? "R" : "B", key.toString(), direction == 1 ? "right" : "left");
-                results.add(tree.key.toString());
+                results.add(tree.key.key);
             }
 
             print(results,tree.left, tree.key, -1);
