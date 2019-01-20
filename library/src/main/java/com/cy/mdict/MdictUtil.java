@@ -3,13 +3,30 @@ package com.cy.mdict;
 import android.text.TextUtils;
 
 import com.cy.File.UtilFile;
+import com.cy.FuzzyWord;
+import com.cy.data.UtilCollection;
 import com.mdict.knziha.rbtree.RBTree_additive;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MdictUtil {
+
+    public static List<FuzzyWord> queryFuzzyWordWithTrans(String word, List<Mdict> mdicts) throws IOException {
+        List<String> fuzzyWords=queryFuzzyWord(word,mdicts);
+        List<FuzzyWord> fuzzyWordWithTrans=new ArrayList<>();
+        if (UtilCollection.isEmpty(fuzzyWords)){
+            return fuzzyWordWithTrans;
+        }else {
+            for (String tempWord:fuzzyWords){
+                FuzzyWord fuzzyWord=new FuzzyWord(tempWord,queryWordDetail(tempWord,mdicts.get(0)));
+                fuzzyWordWithTrans.add(fuzzyWord);
+            }
+            return fuzzyWordWithTrans;
+        }
+    }
 
     public static List<String> queryFuzzyWord(String word,List<Mdict> mdicts) {
         RBTree_additive combining_search_tree = new RBTree_additive();
