@@ -39,6 +39,6 @@ dependencies {
 
     implementation group: 'org.mozilla.intl', name: 'chardet', version: '1.0'
     implementation group: 'org.anarres.lzo', name: 'lzo-core', version: '1.0.6'
-    api 'com.github.djun100:UtilAndroid:d3739ac'
+    api 'com.github.djun100:UtilAndroid:ad0d049'
     testImplementation 'com.github.djun100:UtilDeskTop:-SNAPSHOT'
 }
