@@ -33,6 +33,7 @@ public class MdictUtil {
         for(int i=0;i<mdicts.size();i++)
         {
             mdicts.get(i).size_confined_lookUp5(word,combining_search_tree,i,30);
+            combining_search_tree.flatten().size();
         }
         combining_search_tree.inOrder();//print results stored in the RBTree
 
