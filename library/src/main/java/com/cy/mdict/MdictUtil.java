@@ -2,7 +2,7 @@ package com.cy.mdict;
 
 import android.text.TextUtils;
 
-import com.cy.File.UtilFile;
+import com.cy.file.UtilFile;
 import com.cy.FuzzyWord;
 import com.cy.data.UtilCollection;
 import com.mdict.knziha.rbtree.RBTree_additive;
@@ -61,7 +61,7 @@ html_contents2 = mdxs.get(1).getRecordAt(16906);
                 return html_contents;
             }else {
                 return "<style type=\"text/css\">" +
-                        UtilFile.read_UTF8_FileContent(new File(dict.getCssPathName())) +
+                        UtilFile.readUtf8FileContent(dict.getCssPathName()) +
                         "</style>" +
                         html_contents;
             }
